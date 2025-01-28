@@ -141,6 +141,8 @@ all: stop install start
 	@echo "PROC    = $(PROC)"
 	@echo "PRUN    = $(PRUN)"
 	@echo "PRU_DIR = $(PRU_DIR)"
+        @echo "building glitch-param-set"
+        gcc -o glitch-param-set glitch-param-set.c
 
 # TODO: think about what we want to say if stop fails
 stop:
